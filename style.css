@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100vh;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  min-height: 100vh;
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imgCell {
+  height: 70rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.userBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  width: 100%;
+  background-color: #fff;
+  gap: 2rem;
+}
+
+.imgLogo {
+  width: 15rem;
+}
+
+.imgProfile {
+  width: 8.4rem;
+  height: 8.4rem;
+  border-radius: 50%;
+}
+
+.btnLogin {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+}
+
+.btnAccRemove {
+  color: #0095f6;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.changeAccBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  width: 100%;
+  background-color: #fff;
+}
+
+.changeAccBox span {
+  color: rgb(160, 160, 160);
+  font-size: 1.4rem;
+}
+
+.changeAccBox span a {
+  color: #0095f6;
+}
+
+.downloadIconsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 0;
+  width: 100%;
+  gap: 1rem;
+}
+
+.downloadIconsBox p {
+  font-size: 1.4rem;
+}
+
+.downloadIcons {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.downloadIcons img {
+  width: 14rem;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: #fff;
+    grid-template-columns: auto;
+  }
+  .imgCellBox {
+    display: none;
+  }
+
+  .imgCell {
+    display: none;
+  }
+
+  .userBox {
+    border: none;
+    background-color: transparent;
+  }
+
+  .changeAccBox {
+    border: none;
+    background-color: transparent;
+  }
+}
